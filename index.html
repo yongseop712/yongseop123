@@ -1,71 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>웹프로그래밍</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>김용섭 포트폴리오</title>
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f5f5f5;
+        color: #333;
+      }
+      header {
+        background: #4a90e2;
+        color: white;
+        padding: 2rem;
+        text-align: center;
+      }
+      section {
+        padding: 2rem;
+        max-width: 800px;
+        margin: auto;
+      }
+      .project {
+        margin-bottom: 1.5rem;
+      }
+      footer {
+        background: #222;
+        color: #aaa;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+      }
+    </style>
   </head>
   <body>
-    <!-- 메뉴 -->
-    <nav class="navbar">
-      <div class="container">
-        <div class="logo">WebDemo</div>
-        <ul class="nav">
-          <li><a href="/"> Home </a></li>
-          <li><a href="/about.html"> About </a></li>
-          <li><a href="/contact.html"> Contact </a></li>
-          <li><a href="/team.html"> Team </a></li>
-        </ul>
+    <header>
+      <h1>김용섭</h1>
+      <p>프론트엔드 개발자 | 사용자 중심의 인터페이스를 지향</p>
+    </header>
+
+    <section id="about">
+      <h2>👋 소개</h2>
+      <p>
+        안녕하세요! 저는 웹 개발을 좋아하는 김용섭입니다. JavaScript와 React를
+        중심으로 개발하고 있으며, 팀워크와 커뮤니케이션을 중요하게 생각합니다.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>📁 프로젝트</h2>
+      <div class="project">
+        <h3>강의시간표</h3>
+        <p>
+          React와 Firebase를 활용한 일정 관리 애플리케이션입니다. 로그인 기능,
+          일정 추가/삭제 기능을 구현했습니다.
+        </p>
       </div>
-    </nav>
-
-    <!-- 메인 섹션 -->
-    <section class="main">
-      <div class="container">
-        <h1>웹프로그래밍. Web Programming!!!!</h1>
-        <h2>정보보호학과, 김용섭</h2>
-
-        <h3>
-          웹 개발자를 위한 온라인 매뉴얼:
-          <a href="https://www.w3schools.com/">W3Schools</a>
-        </h3>
-
+      <div class="project">
+        <h3>개인 블로그</h3>
         <p>
-          웹프로그래밍의 3가지 요소:
-          <a href="https://www.w3schools.com/html/default.asp">HTML5</a> |
-          <a href="https://www.w3schools.com/css/default.asp">CSS3</a> |
-          <a href="https://www.w3schools.com/js/default.asp">Javascript</a>
+          Next.js 기반의 블로그. Markdown을 활용해 글을 쉽게 작성하고, SEO
+          최적화를 고려했습니다.
         </p>
-
-        <p>현재시간: <span id="time"></span></p>
-
-        <hr />
-
-        <p>
-          배경색 바꾸기:
-          <button onclick="pink()">Pink</button>
-          <button onclick="lightblue()">Lightblue</button>
-          <button onclick="yellow()">Yellow</button>
-          <button onclick="reset()">Reset</button>
-        </p>
-
-        <p>
-          배워봅시다:
-          <button onmouseover="showhtml()" onmouseout="hide()">HTML5</button>
-          <button onmouseover="showcss()" onmouseout="hide()">CSS3</button>
-          <button onmouseover="showjs()" onmouseout="hide()">Javascript</button>
-        </p>
-
-        <hr />
-
-        <div>
-          <img id="fig" height="200px" />
-          <p id="desc"></p>
-        </div>
       </div>
     </section>
 
-    <script src="main.js"></script>
+    <section id="skills">
+      <h2>🛠️ 기술 스택</h2>
+      <p>HTML, CSS, JavaScript, React, Git, Firebase, Figma</p>
+    </section>
+
+    <section id="contact">
+      <h2>📬 연락처</h2>
+      <p>이메일: yseobk12@naver.com</p>
+      <p>
+        GitHub:
+        <a href="https://github.com/yongseop712/yongseop123" target="_blank"
+          >https://github.com/yongseop712/yongseop123</a
+        >
+      </p>
+    </section>
+
+    <footer>&copy; 2025 김용섭섭. 모든 권리 보유.</footer>
   </body>
 </html>
